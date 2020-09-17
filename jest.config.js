@@ -16,18 +16,16 @@
  * under the License.
  */
 module.exports = {
-        transform: {
-            "^.+\\.tsx$": "ts-jest",
-            "^.+\\.ts$": "ts-jest",
-            "^.+\\.js$": "babel-jest",
-            "^.+\\.jsx$": "babel-jest"
-        },
-        moduleNameMapper: {
-            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$"
-                : "<rootDir>/test-configs/file-mock.js",
-            "\\.(css|less)$": "<rootDir>/test-configs/style-mock.js"
-        },
-        setupFilesAfterEnv: [
-            "<rootDir>/test-configs/setup-test.ts"
-        ]
+    moduleNameMapper: {
+        "\\.(css|less)$": "<rootDir>/test-configs/style-mock.js",
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$"
+            : "<rootDir>/test-configs/file-mock.js"
+    },
+    setupFilesAfterEnv: ["<rootDir>/test-configs/setup-test.ts"],
+    transform: {
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.jsx$": "babel-jest",
+        "^.+\\.ts$": "ts-jest",
+        "^.+\\.tsx$": "ts-jest"
+    }
 }

@@ -260,7 +260,7 @@ export const InnerField = React.forwardRef((props: InnerFieldPropsInterface, ref
                                     value={ checkbox.value }
                                     checked={
                                         form.get(inputField.name) &&
-                                        (form.get(inputField.name) as string[]).indexOf(checkbox.value) > 0
+                                        (form.get(inputField.name) as string[]).includes(checkbox.value)
                                     }
                                     onChange={ (event: React.ChangeEvent<HTMLInputElement>, { value }) => {
                                         handleChangeCheckBox(value.toString(), inputField.name);

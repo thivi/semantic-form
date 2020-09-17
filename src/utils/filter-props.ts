@@ -20,6 +20,7 @@
  * This removes the used props frm passedProps
  * @param props
  */
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const filterPassedProps = (props: any): any => {
     delete props.type;
     delete props.name;

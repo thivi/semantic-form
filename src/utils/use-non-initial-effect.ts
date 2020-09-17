@@ -24,7 +24,7 @@ import { useEffect, useRef } from "react";
  * @param {React.EffectCallback} effect The callback function passed into the useEffect hook
  * @param deps states or props based on which the callback function should be conditionally called
  */
-export const useNonInitialEffect = (effect: React.EffectCallback, deps?: readonly any[]) => {
+export const useNonInitialEffect = (effect: React.EffectCallback, deps?: readonly any[]): void => {
     const initialRender = useRef(true);
     useEffect(() => {
         let returned;
