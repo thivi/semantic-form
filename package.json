@@ -1,12 +1,12 @@
 {
-    "name": "@wso2is/forms",
-    "version": "1.0.407",
-    "description": "Forms module for WSO2 Identity Server web-apps.",
+    "name": "@codemachan/semantic-form",
+    "version": "0.1.0",
+    "description": "A React form library written to be used with Semantic UI",
     "keywords": [
-        "WSO2",
-        "WSO2 IS",
-        "WSO2 Identity Server",
-        "WSO2 Identity Apps",
+        "React",
+        "Form",
+        "Semantic",
+        "React JS",
         "form"
     ],
     "main": "dist/src/index.js",
@@ -18,16 +18,34 @@
         "compile": "run-script-os",
         "compile:win32": "..\\..\\node_modules\\.bin\\tsc -p tsconfig.json",
         "compile:default": "../../node_modules/.bin/tsc -p tsconfig.json",
-        "lint": "tslint -t stylish --project .",
+        "lint": "eslint .",
         "test": "jest"
     },
     "devDependencies": {
         "rimraf": "^3.0.2",
-        "run-script-os": "^1.0.7"
+        "run-script-os": "^1.0.7",
+        "eslint": "^6.8.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-react": "^7.18.3",
+        "eslint-plugin-react-hooks": "^4.0.0",
+        "jest": "^24.0.0",
+        "typescript": "^3.9.7",
+        "ts-jest": "^24.1.0"
     },
     "peerDependencies": {
-        "classnames": "*"
+        "semantic-ui-react": "^0.87.3",
+        "react": "^16.9.0",
+        "@types/jest": "^24.0.0",
+        "@types/react": "^16.9.0"
     },
-    "author": "WSO2",
-    "license": "Apache-2.0"
+    "author": "Theviyanthan Krishnamohan",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thivi/semantic-form.git"
+    },
+    "bugs": {
+        "url": "https://github.com/thivi/semantic-form/issues"
+    },
+    "homepage": "https://github.com/thivi/semantic-form#readme"
 }

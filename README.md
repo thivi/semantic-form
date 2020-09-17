@@ -1,1 +1,2 @@
-# WSO2 Identity Server - Form Module for Javascript/Typescript Applications
+# Semantic Form
+This is a React form component that makes use of Semantic UI.
