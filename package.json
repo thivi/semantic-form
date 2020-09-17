@@ -9,9 +9,6 @@
         "React JS",
         "form"
     ],
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    },
     "main": "dist/src/index.js",
     "types": "dist/typings/index.d.ts",
     "scripts": {
