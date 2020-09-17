@@ -1,6 +1,6 @@
 {
     "name": "@codemachan/semantic-form",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "A React form library written to be used with Semantic UI",
     "keywords": [
         "React",
