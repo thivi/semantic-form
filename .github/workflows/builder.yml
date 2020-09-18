@@ -5,7 +5,11 @@ name: Builder
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+    paths-ignore:
+      - 'package.json'
+      - 'package-lock.json'
 
 jobs:
   build:
@@ -19,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: ${{secrets.GITHUB_TOKEN}}
+        token: ${{secrets.PERSONAL_ACCESS_TOKEN}}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
