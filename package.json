@@ -25,7 +25,7 @@
     "devDependencies": {
         "@testing-library/jest-dom": "^5.11.4",
         "@testing-library/react": "^11.0.4",
-        "@types/jest": "^24.0.0",
+        "@types/jest": "^26.0.14",
         "@types/react": "^16.9.0",
         "@typescript-eslint/eslint-plugin": "^4.1.1",
         "@typescript-eslint/parser": "^4.1.1",
@@ -34,19 +34,18 @@
         "eslint-plugin-import": "^2.20.2",
         "eslint-plugin-react": "^7.18.3",
         "eslint-plugin-react-hooks": "^4.0.0",
-        "jest": "^24.0.0",
+        "jest": "^26.4.2",
         "react": "^16.9.0",
         "react-dom": "^16.13.1",
         "rimraf": "^3.0.2",
         "run-script-os": "^1.0.7",
         "semantic-ui-react": "^0.87.3",
-        "ts-jest": "^24.1.0",
+        "ts-jest": "^26.4.0",
         "typescript": "^3.9.7"
     },
     "peerDependencies": {
         "semantic-ui-react": "^0.87.3",
         "react": "^16.9.0",
-        "@types/jest": "^24.0.0",
         "@types/react": "^16.9.0",
         "classnames": "^2.2.6"
     },
